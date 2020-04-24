@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>
+      Your Secure Locker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-row>
+    <ion-col size="6" *ngFor="let x of randomData; let i = index">
+      <ion-card class="bg"  (click)="viewDetail(x.id, x.totalpassword)">
+        <ion-card-header style="font-size: smaller;">
+          {{x.name}} ({{x.totalpassword}})
+          <!-- ({{i}}) -->         
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+   
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS notes ( id INTEGER PRIMARY KEY AUTOINCREMENT, created_date VARCHAR, updated_date VARCHAR, notes_content TEXT, status VARCHAR, added_by INTEGER, notes_title TEXT, color TEXT, reminder_date TEXT );
